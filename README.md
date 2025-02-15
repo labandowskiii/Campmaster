@@ -7,11 +7,11 @@ El proyecto consiste en una aplicacion Java conectada a una base de datos para l
 - Marta garcía Fernández
 - Lucía Fernandez Rodríguez
 ## Estructura de la aplicación
--Frontend: JavaFX
--Backend: Java 
--Base de datos: MySQL
--Gestor de proyecto: Maven
--Alojamiento de documentos: Amazon S3
+- Frontend: JavaFX
+- Backend: Java 
+- Base de datos: MySQL
+- Gestor de proyecto: Maven
+- Alojamiento de documentos: Amazon S3
 
 **Para su uso, es necesario crear un archivo .env en la raiz del proyecto con la siguiente estructura:**
  ```env
