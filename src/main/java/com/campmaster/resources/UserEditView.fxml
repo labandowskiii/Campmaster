@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="367.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.campmaster.controlador.UserEditController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="DNI" />
+      <Label text="Nombre" GridPane.rowIndex="1" />
+      <Label text="Apellidos" GridPane.rowIndex="2" />
+      <Label text="Correo" GridPane.rowIndex="3" />
+      <Label text="Nombre del Tutor" GridPane.rowIndex="4" />
+      <Label text="Telefono del tutor" GridPane.rowIndex="5" />
+      <TextField fx:id="dniField" disable="true" GridPane.columnIndex="1" />
+      <TextField fx:id="nombreField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="apellidosField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="correoField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="nombreTutorField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="telefonoTutorField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label text="Archivos subidos" GridPane.rowIndex="6" />
+      <VBox fx:id="buttonBox" prefHeight="200.0" prefWidth="100.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="documento1" mnemonicParsing="false" text="Button" />
+            <Button fx:id="documento2" mnemonicParsing="false" text="Button" />
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <Button fx:id="saveButton" mnemonicParsing="false" text="Guardar Cambios" GridPane.rowIndex="7" />
+   </children>
+   <padding>
+      <Insets right="15.0" />
+   </padding>
+</GridPane>

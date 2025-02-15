@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="583.0" prefWidth="418.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.campmaster.controlador.SignUpViewController">
+   <children>
+      <Button fx:id="regUserButton" layoutX="81.0" layoutY="543.0" mnemonicParsing="false" text="Registrar usuario" />
+      <PasswordField fx:id="repeat_pw" layoutX="156.0" layoutY="272.0" prefHeight="26.0" prefWidth="190.0" />
+      <PasswordField fx:id="pw" layoutX="156.0" layoutY="225.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="dni" layoutX="156.0" layoutY="58.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="64.0" layoutY="60.0" text="DNI " />
+      <TextField fx:id="name" layoutX="156.0" layoutY="102.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="54.0" layoutY="106.0" text="Nombre" />
+      <Label layoutX="46.0" layoutY="230.0" text="Contraseña" />
+      <Label layoutX="38.0" layoutY="276.0" text="Repetir contraseña" />
+      <TextField fx:id="correo" layoutX="158.0" layoutY="182.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="58.0" layoutY="180.0" text="Correo" />
+      <RadioButton fx:id="ParticipanteButton" layoutX="95.0" layoutY="310.0" mnemonicParsing="false" text="Participante">
+         <toggleGroup>
+            <ToggleGroup fx:id="radioButtonGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="AdminButton" layoutX="285.0" layoutY="310.0" mnemonicParsing="false" text="Administrador" toggleGroup="$radioButtonGroup" />
+      <RadioButton fx:id="MonitorButton" layoutX="195.0" layoutY="310.0" mnemonicParsing="false" text="Monitor" toggleGroup="$radioButtonGroup" />
+      <Label layoutX="46.0" layoutY="310.0" text="Tipo" />
+      <PasswordField fx:id="pw_type" layoutX="134.0" layoutY="371.0" />
+      <Label layoutX="99.0" layoutY="344.0" text="Contraseña (Solo Monitor/Administrador)">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="112.0" layoutY="423.0" text="Datos del tutor (Solo Participante)">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="13.0" layoutY="410.0" prefHeight="6.0" prefWidth="392.0" />
+      <TextField fx:id="nombreTutor" layoutX="137.0" layoutY="450.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="telefonoTutor" layoutX="137.0" layoutY="493.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="24.0" layoutY="454.0" text="Nombre del tutor" />
+      <Label layoutX="22.0" layoutY="497.0" text="Teléfono del tutor" />
+      <TextField fx:id="apellidos" layoutX="156.0" layoutY="144.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="54.0" layoutY="148.0" text="Apellidos" />
+      <Button fx:id="returnLogin" layoutX="232.0" layoutY="543.0" mnemonicParsing="false" text="Volver a login" />
+   </children>
+</AnchorPane>
